@@ -1,0 +1,159 @@
+:root {
+  --c-black: #1a1a1a;
+  --c-white: #e1e1e1;
+  --c-grey: #898989;
+  --c-purple: #b462ff;
+  --c-fuschia: #ff45b4;
+  --c-fuschia-dark: #bb1e7c;
+  --c-fuschia-light: #ff8ad0;
+  --c-blue: #18b6ff;
+  --c-green: #1beb9e;
+  --c-green-dark: #23ad7b;
+  --c-green-light: #62ffc6;
+  --c-orange: #ff9528;
+  --c-yellow: #dddd25;
+  --c-red: #ff2828;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+main {
+  /* font-size: 62.5%; */
+}
+
+/* ////////// Globals ////////// */
+.c-black {
+  color: var(--c-black);
+}
+
+.c-white {
+  color: var(--c-white);
+}
+
+.c-grey {
+  color: var(--c-grey);
+}
+
+.c-purple {
+  color: var(--c-purple)
+}
+
+.c-fuschia {
+  color: var(--c-fuschia)
+}
+
+.c-blue {
+  color: var(--c-blue)
+}
+
+.c-green {
+  color: var(--c-green)
+}
+
+.c-orange {
+  color: var(--c-orange)
+}
+
+.c-yellow {
+  color: var(--c-yellow)
+}
+
+.c-red {
+  color: var(--c-red)
+}
+
+/* ////////// First Display ////////// */
+.first-display {
+  margin-top: 56px;
+  /* height: calc(100vh - 56px); */
+  /* border: 2px solid red; */
+  background-color: var(--c-black);
+  color: var(--c-white);
+}
+
+/* banner */
+.banner-section {
+  height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+}
+
+.banner-section article {
+  padding: 20px;
+  /* font-size: 3.5rem; */
+}
+
+.banner-section h2 {
+  font-size: 3.5rem;
+}
+
+.banner-section h3 {
+  font-size: 1.5rem;
+}
+
+.banner-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* about */
+.about-section {
+  height: calc(100vh - 56px);
+}
+.about-section::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 2px;
+  background-color: var(--c-green)
+}
+.about-section .my-img{
+  height: 200px;
+  width: 200px;
+  background: var(--c-blue);
+  position: relative;
+  top: -90px;
+  left: -15px;
+  border-radius: 50%;
+  border: 10px solid var(--c-black);
+  /* float: inline-start; */
+}
+
+
+/* ////////// Second Display ////////// */
+.exp-section {
+  border: 2px solid red;
+  height: calc(100vh - 56px);
+}
+
+/* ////////// Thrid Display ////////// */
+.edu-section {
+  border: 2px solid red;
+  height: calc(100vh - 56px);
+}
+
+/* ////////// Fourth Display ////////// */
+.skills-section {
+  border: 2px solid red;
+  height: calc(100vh - 56px);
+}
+
+/* ////////// Fifth Display ////////// */
+.proyects-section {
+  border: 2px solid red;
+  height: calc(100vh - 56px);
+}
+
+/* ////////// Footer ////////// */
