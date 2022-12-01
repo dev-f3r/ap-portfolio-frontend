@@ -10,7 +10,11 @@
   <!-- ////////// FONT ////////// -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=IBM+Plex+Mono:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+
   <!-- Bootstrap CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -28,7 +32,11 @@
     <!-- container -->
     <div class="container-fluid">
       <!-- icon -->
-      <a class="navbar-brand" href="#">Icon</a>
+      <a class="navbar-brand" href="#">
+        <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.39844 0C1.52153 0 0 1.5503 0 3.46269V20.5373C0 22.4497 1.52153 24 3.39844 24H26.6016C28.4785 24 30 22.4497 30 20.5373V3.46269C30 1.5503 28.4785 0 26.6016 0H3.39844ZM7.66484 6.25851C7.30392 5.83548 6.67477 5.79065 6.25957 6.15839C5.84438 6.52613 5.8004 7.16717 6.16131 7.59022L9.44099 11.4344L6.16131 15.2786C5.8004 15.7016 5.84438 16.3426 6.25957 16.7104C6.67477 17.0781 7.30392 17.0333 7.66484 16.6102L11.4893 12.1275C11.6597 11.9278 11.7398 11.6796 11.7333 11.4344C11.7398 11.1892 11.6597 10.9409 11.4893 10.7412L7.66484 6.25851ZM12.3633 17.6716C11.8131 17.6716 11.3672 18.126 11.3672 18.6866C11.3672 19.2471 11.8131 19.7015 12.3633 19.7015H19.9805C20.5306 19.7015 20.9766 19.2471 20.9766 18.6866C20.9766 18.126 20.5306 17.6716 19.9805 17.6716H12.3633Z" fill="white"/>
+          </svg>          
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -62,22 +70,30 @@
     <!-- ////////// first display ////////// -->
     <div class="container-fluid first-display">
       <!-- ////////// banner section ////////// -->
-      <section class="banner-section">
+      <section class="banner-section row">
         <!-- <img src="night-ocean-landscape-full-moon-stars-shine_107791-7397.webp" alt="" class="img-fluid"> -->
-        <article>
-          <h2>Hola</h2>
-          <h1>Mi nombre es <span class="c-red">Fernando</span>.</h1>
-          <h5 class="c-blue">Soy un desarrollador full-stack.</h5>
+        <article class="col">
+          <h1 class="banner-h1">Hola, mi nombre es</h1>
+          <h2 class="banner-h2"><span class="c-blue">Fernando Castro</span>.</h2>
+          <h3 class="banner-h3"><span class="c-grey">Soy un desarrollador web.</span></h3>
+          <!-- <h2>Hola, mi nombre es</h2>
+          <h1><span class="c-red">Fernando</span>.</h1>
+          <h5 class="c-blue">Soy un desarrollador full-stack.</h5> -->
         </article>
       </section>
       <!-- ////////// about section ////////// -->
-      <section class="about-section row justify-content-center">
-        <div class="my-img"></div>
-        <div class="col-md-8">
-          <h1>Acerca de:</h1>
-          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum perspiciatis eaque in ab
-            similique, eligendi natus odio, minima, libero architecto dolores. Commodi dicta sequi quisquam eveniet ad
-            in dolor recusandae.</p>
+      <section class="about-section row">
+        <!-- <div class="my-img"></div> -->
+        <div class="col-lg">
+          <!-- <h1>Un poco de mi:</h1> -->
+          <p class="about-p c-green">About: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum perspiciatis
+            eaque in ab
+            similique, eligendi natus odio.</p>
+        </div>
+        <div class="col-md-3">
+          <a class="about-btn custom-btn" href="mailto:devfercastro@gmail.com" class="btn-email"
+            target="_blank">Contactame</a>
+          <!-- <p>Lorem, ipsum dolor.</p> -->
         </div>
       </section>
     </div>
